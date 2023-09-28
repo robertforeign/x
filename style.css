@@ -1,0 +1,70 @@
+/*
+Vocab:
+
+Selectors = .header {}
+Elements = <p> <h1>
+Tags = <a> tag
+Attribute = href = "https://example.com"
+Sections = The groups decided by containers
+Specificity = priority of CSS selection
+Properties = the styling pairs
+
+In-Line CSS
+Internal CSS
+External CSS
+
+Div = Block container
+Span = inline container
+
+Layout Tools
+    CSS Grid
+    Flexbox
+    Z-Index
+
+Valid Links:
+
+https://www.w3schools.com/cssref/css_selectors.php
+https://www.w3schools.com/css/css_specificity.asp
+https://www.dofactory.com/css/properties
+https://www.w3schools.com/css/css_boxmodel.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+https://blog.hubspot.com/website/css-position
+
+*/
+
+body{
+    margin: 0px;
+    min-width: 300;
+}
+
+@media screen and (max-width: 720px){
+    *{
+        font-size:smaller;
+    }
+}
+
+.header {
+    position: fixed;
+
+    
+    background-color: yellow;
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+    border: 2px solid black;
+    margin: 0;
+    block-size: 100%;
+}
+.normPara{
+    font-style: italic;
+    margin: 0;
+}
+#firstPara{
+    font-size: 4em;
+    background-color: rgb(220, 222, 89);
+}
+#secondPara{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    background-color: rgb(212, 212, 117);
+}

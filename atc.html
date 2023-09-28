@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-images {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Add space between images */
+        }
+
+        .product-details {
+            margin-top: 20px;
+        }
+
+        .add-to-cart {
+            position: sticky;
+            bottom: 0;
+            background-color: #fff;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .add-to-cart button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <h1>Product Name</h1>
+        <div class="product-images">
+            <img src="placeholder1.jpg" alt="Product Image 1" class="product-image">
+            <img src="placeholder2.jpg" alt="Product Image 2" class="product-image">
+            <img src="placeholder3.jpg" alt="Product Image 3" class="product-image">
+            <!-- Add more images as needed -->
+        </div>
+        <div class="product-details">
+            <p><strong>Price:</strong> $19.99</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><strong>Specifications:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <div class="add-to-cart">
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <script>
+        const addToCartButton = document.getElementById('add-to-cart-btn');
+
+        addToCartButton.addEventListener('click', () => {
+            // Handle adding the product to the cart here.
+            alert('Product added to cart!');
+        });
+    </script>
+</body>
+</html>
